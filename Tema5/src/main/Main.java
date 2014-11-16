@@ -3,12 +3,10 @@
  */
 package main;
 
-import shipyard.ColonyShip;
-import shipyard.HeavyFighter;
-import shipyard.LightFighter;
-import shipyard.SmallCargoShip;
-import interfaces.CivilianShip;
 import interfaces.MilitaryShip;
+import shipyard.Shipyard;
+import shipyard.ShipyardConstructor;
+import shipyard.MilitaryShipyard;
 
 
 
@@ -24,7 +22,7 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		
-	MilitaryShip ms1= new LightFighter();
+	/*MilitaryShip ms1= new LightFighter();
 	ms1.showStats();
 	ms1.fireWeapons();
 	MilitaryShip ms2= new LightFighter();
@@ -44,7 +42,23 @@ public class Main {
 	cs2.loadPassangers(5000);
 	cs2.loadPassangers(750);
 	
-	
+	*/
+		
+		
+		
+		
+		Shipyard tulcea= ShipyardConstructor.getShipyard("Modern");
+		
+		Shipyard constanta= ShipyardConstructor.getShipyard("military");
+		MilitaryShip viforul=constanta.getMilitaryShip("Light Fighter");
+		viforul.rename("Viforul");
+		viforul.showStats();
+		viforul.fireWeapons();
+		
+		MilitaryShip marasti=constanta.getMilitaryShip("Heavy Fighter");
+		marasti.rename("Marasti");
+		marasti.showStats();
+		marasti.fireWeapons();
 	}
 
 }

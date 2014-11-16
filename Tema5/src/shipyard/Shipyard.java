@@ -11,6 +11,6 @@ import interfaces.MilitaryShip;
  *
  */
 public abstract class Shipyard {
-	abstract MilitaryShip getMilitaryShip(String shipType);
-	abstract CivilianShip getCivilianShip(String ShipType);
+	public abstract MilitaryShip getMilitaryShip(String shipType);
+	public abstract CivilianShip getCivilianShip(String ShipType);
 }
