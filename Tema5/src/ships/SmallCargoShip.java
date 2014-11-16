@@ -1,7 +1,7 @@
 /**
  * 
  */
-package shipyard;
+package ships;
 
 import interfaces.CivilianShip;
 
@@ -31,7 +31,7 @@ public class SmallCargoShip extends ShipStats implements CivilianShip {
 			System.out.println("The name is Invalid");
 			return;
 		}
-		this.Name = "LC " + newName;
+		this.Name = "SC " + newName;
 	}
 
 	

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package shipyard;
+package ships;
 
 import interfaces.MilitaryShip;
 
